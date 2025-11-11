@@ -110,9 +110,6 @@ public class StripNumberFromText_V2 {
 			}
 			
 			
-			text = "";
-			
-			
 			if(text.equalsIgnoreCase("y")) {
 				
 				while(!text.equalsIgnoreCase("a") && !text.equalsIgnoreCase("d")) {
@@ -122,8 +119,11 @@ public class StripNumberFromText_V2 {
 					text = scanL.nextLine();
 					
 				}
-			
 
+
+				text = "";			
+
+				
 				for(int i = 0; i < conversionResult.length; i++) {
 					
 					numberConverted += conversionResult[i];
@@ -259,3 +259,4 @@ public class StripNumberFromText_V2 {
 	}
 
 }
+
